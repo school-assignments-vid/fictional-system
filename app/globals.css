@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @theme inline {
   --color-background: var(--background);
@@ -6,6 +7,8 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-muted: var(--muted);
+  --font-headline: var(--font-satoshi);
+  --font-body: var(--font-hanken-grotesk);
 }
 
 :root {
@@ -14,4 +17,13 @@
   --primary: oklch(0.7309 0.1839 51.23);
   --secondary: oklch(0.6335 0.1047 198.95);
   --muted: oklch(0.2724 0.0018 106.52);
+}
+
+@layer base {
+  * {
+    @apply border-s-muted outline-muted/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
