@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme inline {
+    /* Put stuff here */
+}
+
+:root {
+    /* Put the real stuff here */
+}
