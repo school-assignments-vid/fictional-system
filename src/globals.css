@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-    /* Put stuff here */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
 }
 
 :root {
-    /* Put the real stuff here */
+  --background: oklch(0.9848 0.0013 106.42);
+  --foreground: oklch(0.1067 0 0);
+  --primary: oklch(0.7309 0.1839 51.23);
+  --secondary: oklch(0.6335 0.1047 198.95);
+  --muted: oklch(0.2724 0.0018 106.52);
 }
