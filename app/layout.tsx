@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",
   subsets: ["latin"],
@@ -38,9 +41,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${hankenGrotesk.variable} ${satoshi.variable} antialiased`}
+        className={`${hankenGrotesk.variable} ${satoshi.variable} antialiased font-body`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
