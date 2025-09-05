@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full h-120 relative bg-[url(/images/forside/paper_bg.webp)] bg-cover">
-        <div className="bg-secondary/60 w-full h-full pt-20 flex justify-center items-center flex-col gap-2 font-headline text-center p-4">
+        <div className="bg-secondary/60 w-full h-full flex justify-center items-center flex-col gap-2 font-headline text-center p-4">
           <span className="text-xl md:text-2xl font-bold text-shadow-lg text-white">
             Hvad vil du være?
           </span>
