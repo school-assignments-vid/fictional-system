@@ -21,7 +21,7 @@
 
 @layer base {
   * {
-    @apply border-s-muted outline-muted/50;
+    @apply border-s-muted/50 outline-muted/50;
   }
   body {
     @apply bg-background text-foreground;
