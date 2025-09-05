@@ -12,21 +12,21 @@ const cards = [
   {
     title: "Terma A/S",
     description: "Industritekniker, Teknologi, byggeri og transport",
-    link: "Læs mere",
+    link: "#",
     image: "/images/forside/paper_bg.webp",
     imageAlt: "Image Alt Text",
   },
   {
-    title: "Terma A/S",
-    description: "Industritekniker, Teknologi, byggeri og transport",
-    link: "Læs mere",
+    title: "Johnsen Print & Digital Media",
+    description: "Grafisk tekniker, Teknologi, byggeri og transport",
+    link: "#",
     image: "/images/forside/paper_bg.webp",
     imageAlt: "Image Alt Text",
   },
   {
-    title: "Terma A/S",
-    description: "Industritekniker, Teknologi, byggeri og transport",
-    link: "Læs mere",
+    title: "Campus Djursland",
+    description: "Castronom, Fødevarer, Jordbrug og Oplevelser",
+    link: "#",
     image: "/images/forside/paper_bg.webp",
     imageAlt: "Image Alt Text",
   },
@@ -36,8 +36,16 @@ export default function Home() {
   return (
     <>
       <section className="w-full h-120 relative bg-[url(/images/forside/paper_bg.webp)] bg-cover">
-        <div className="bg-secondary/60 w-full h-full pt-20">
-          <div className="mx-auto"></div>
+        <div className="bg-secondary/60 w-full h-full pt-20 flex justify-center items-center flex-col gap-2 font-headline text-center p-4">
+          <span className="text-xl md:text-2xl font-bold text-shadow-lg text-white">
+            Hvad vil du være?
+          </span>
+          <h1 className="text-6xl md:text-8xl font-bold text-shadow-lg text-primary">
+            Vi er i lære
+          </h1>
+          <span className="font-bold text-shadow-lg md:text-2xl text-white">
+            ilære.dk - stedet, hvor unge og virksomheder mødes
+          </span>
         </div>
       </section>
       <section>
@@ -52,7 +60,9 @@ export default function Home() {
         ></iframe>
       </section>
       <section className="hidden md:flex mx-auto container p-4 w-full flex-col gap-10 justify-center items-center">
-        <h2 className="font-headline text-5xl font-bold xl:text-7xl text-center">Mød de nyeste virksomheder</h2>
+        <h2 className="font-headline text-5xl font-bold xl:text-7xl text-center">
+          Mød de nyeste virksomheder
+        </h2>
         <div className="flex flex-row justify-center items-center gap-4">
           {cards.map((card, idx) => (
             <Card key={idx}>
@@ -60,12 +70,17 @@ export default function Home() {
               <CardContent>
                 <CardTitle>{card.title}</CardTitle>
                 <CardDescription>{card.description}</CardDescription>
-                <CardLink href="#">Læs mere</CardLink>
+                <CardLink href={card.link}>Læs mere</CardLink>
               </CardContent>
             </Card>
           ))}
         </div>
-        <Link className="px-8 py-4 bg-primary rounded-md text-white font-semibold font-headline" href="#">Flere Virksomheder</Link>
+        <Link
+          className="px-8 py-4 bg-primary rounded-md text-white font-semibold font-headline"
+          href="#"
+        >
+          Flere Virksomheder
+        </Link>
       </section>
       <section className="p-4 mb-10 grid grid-cols-1 xl:grid-cols-2 gap-12 mx-auto container md:mt-10">
         <div>
